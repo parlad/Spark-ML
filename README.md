@@ -28,6 +28,7 @@ Code Snepits :
 ```
 
 Prediction Outcome : 
+![](https://github.com/parlad/Spark-ML/blob/master/Images/decisionTreeRegressionoutput.png)
 
 2. Random Forest Regression: 
 Introduction : A random forest is a meta estimator that fits a number of classifying decision trees on various sub-samples of the dataset and uses averaging to improve the predictive accuracy and control over-fitting. The sub-sample size is always the same as the original input sample size but the samples are drawn with replacement if bootstrap=True (default). A Random Forest is an ensemble technique capable of performing both regression and classification tasks with the use of multiple decision trees and a technique called Bootstrap Aggregation, commonly known as bagging. What is bagging you may ask? Bagging, in the Random Forest method, involves training each decision tree on a different data sample where sampling is done with replacement.
