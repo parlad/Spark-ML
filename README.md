@@ -1,6 +1,13 @@
 # Spark-ML
-this project is the implementation of Machine Learning Algorithm in Spark to predict the housing price for next year
+This project is the implementation of Machine Learning Algorithm in Spark to predict the housing price for next year
 
+# How to Run the Algorithms
+To run the algorithms, you can clone the repository and use ```spark-submit``` or ```pyspark``` to execute the python files.
+i.e. 
+
+    > spark-submit GBTRegressor.py
+    > spark-submit RandomForestRegressor.py
+    > spark-submit DecisionTreeRegressor.py
 
 Machine Learning Libraries
 
