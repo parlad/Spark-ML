@@ -31,7 +31,7 @@ Prediction Outcome :
 
 2. Random Forest Regression: 
 Introduction : A random forest is a meta estimator that fits a number of classifying decision trees on various sub-samples of the dataset and uses averaging to improve the predictive accuracy and control over-fitting. The sub-sample size is always the same as the original input sample size but the samples are drawn with replacement if bootstrap=True (default). A Random Forest is an ensemble technique capable of performing both regression and classification tasks with the use of multiple decision trees and a technique called Bootstrap Aggregation, commonly known as bagging. What is bagging you may ask? Bagging, in the Random Forest method, involves training each decision tree on a different data sample where sampling is done with replacement.
-        ![](randomForestAlgImge)
+        ![](https://github.com/parlad/Spark-ML/blob/master/Images/randomForest.png)
 
 Code Snepits :
 ```
@@ -44,6 +44,7 @@ rfresults.show()
 ```
 
 Prediction Outcome : 
+![](https://github.com/parlad/Spark-ML/blob/master/Images/RandomeForestRegresionOutput.png)
 
 3. Gradient Boosted Tree Regression
 Introduction :  Boosting is a method of converting weak learners into strong learners. In boosting, each new tree is a fit on a modified version of the original data set. The gradient boosting algorithm (gbm) can be most easily explained by first introducing the AdaBoost Algorithm.The AdaBoost Algorithm begins by training a decision tree in which each observation is assigned an equal weight. After evaluating the first tree, we increase the weights of those observations that are difficult to classify and lower the weights for those that are easy to classify. The second tree is therefore grown on this weighted data. Here, the idea is to improve upon the predictions of the first tree. Our new model is therefore Tree 1 + Tree 2. We then compute the classification error from this new 2-tree ensemble model and grow a third tree to predict the revised residuals. We repeat this process for a specified number of iterations. Subsequent trees help us to classify observations that are not well classified by the previous trees. Predictions of the final ensemble model is therefore the weighted sum of the predictions made by the previous tree models.
@@ -57,7 +58,7 @@ gbtresults.select("Prediction", "Yearly Amount Spent", "Features")
 gbtresults.show()
 ```
 Prediction Outcome : 
-
+![](https://github.com/parlad/Spark-ML/blob/master/Images/Gradient_Boosted_Tree%20Regression_outcome.png)
 
 
 
